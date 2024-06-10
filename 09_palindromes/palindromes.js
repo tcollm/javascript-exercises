@@ -1,10 +1,11 @@
 const palindromes = function (string) {
-    console.log("STRING: " + string); 
-    for (let i = 0; i < string.length; i++) {
-        // console.log("Beginning of string: " + string[i] + " \n" + 
-        //             "End of string: " + string[string.length - 1 - i]); 
+    // remove spaces and punctuation from string
+    let filteredString = [...string].filter(char => /[^\W_]/.test(char)).join(''); 
 
-        if (string[i] != string[string.length - i - 1]) {
+
+    console.log("STRING: " + filteredString); 
+    for (let i = 0; i < filteredString.length; i++) {
+        if (filteredString[i] != filteredString[filteredString.length - i - 1]) {
             return false; 
         }
     }
