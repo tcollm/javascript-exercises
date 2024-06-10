@@ -24,8 +24,16 @@ const sum = function(...args) {
   return sum; 
 };
 
-const multiply = function() {
+const multiply = function(...args) {
+  if (Array.isArray(args[0])) {
+    args = args[0];
+  }
 
+  let product = args[0]; 
+  for (let i = 1; i < args.length; i++) {
+    product *= args[i];
+  }
+  return product; 
 };
 
 const power = function() {

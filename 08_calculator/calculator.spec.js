@@ -33,13 +33,13 @@ describe('sum', () => {
     expect(calculator.sum([7, 11])).toBe(18);
   });
 
-  test.skip('computes the sum of an array of many numbers', () => {
+  test('computes the sum of an array of many numbers', () => {
     expect(calculator.sum([1, 3, 5, 7, 9])).toBe(25);
   });
 });
 
 describe('multiply', () => {
-  test.skip('multiplies two numbers', () => {
+  test('multiplies two numbers', () => {
     expect(calculator.multiply([2, 4])).toBe(8);
   });
 
