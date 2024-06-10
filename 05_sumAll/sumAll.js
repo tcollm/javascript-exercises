@@ -3,6 +3,10 @@ const sumAll = function(num1, num2) {
         return 'ERROR'; 
     }
 
+    if (typeof num1 != 'number' || typeof num2 != 'number') {
+        return 'ERROR';
+    }
+
     let min = 0;
     let max = 0; 
     if (num2 > num1) {
