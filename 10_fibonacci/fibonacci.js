@@ -1,5 +1,7 @@
 // fibonacci sequence = 1,1,2,3,5,8,13,...
 const fibonacci = function(nthTerm) {
+    nthTerm = Number(nthTerm); 
+
     if (nthTerm === 0) {
         return 0; 
     }
