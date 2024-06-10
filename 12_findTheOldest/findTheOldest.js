@@ -3,7 +3,7 @@ const findTheOldest = function(array) {
     ageArray = array.map((person) => person.yearOfDeath - person.yearOfBirth);
 
     let oldest = 0; 
-    let index = Infinity; 
+    let index = 0; 
     for (let i = 0; i < ageArray.length; i++) {
         if (ageArray[i] > oldest) {
             oldest = ageArray[i]; 
@@ -11,7 +11,7 @@ const findTheOldest = function(array) {
         }
     }
 
-    return array[index].name; 
+    return array[index]; 
 };
 
 // Do not edit below this line
