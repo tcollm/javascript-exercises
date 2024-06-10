@@ -8,8 +8,10 @@ const subtract = function(num1, num2) {
 
 const sum = function(...args) {
   let sum = 0; 
-	for (let i = 0; i < args.length; i++) {
-    sum += Number(args[i]);
+  let intArgs = args.map(Number); 
+
+	for (let i = 0; i < intArgs.length; i++) {
+    sum += intArgs;
   }
   return sum; 
 };
