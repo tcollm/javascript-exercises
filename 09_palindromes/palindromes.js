@@ -1,6 +1,10 @@
 const palindromes = function (string) {
+    console.log("STRING: " + string); 
     for (let i = 0; i < string.length; i++) {
-        if (string[i] != string[string.length - i]) {
+        console.log("Beginning of string: " + string[i] + " \n" + 
+                    "End of string: " + string[string.length - i + 1]); 
+
+        if (string[i] != string[string.length - i + 1]) {
             return false; 
         }
     }
