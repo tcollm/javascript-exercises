@@ -4,6 +4,10 @@ const fibonacci = function(nthTerm) {
         return 0; 
     }
 
+    if (nthTerm < 0) {
+        return "OOPS";
+    }
+
     let currentTerm = 1;
     let lastTerm = 0; 
     let tempStorage = 0; 
