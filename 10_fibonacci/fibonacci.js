@@ -4,7 +4,8 @@ const fibonacci = function(nthTerm) {
     let lastTerm = 0; 
     let tempStorage = 0; 
 
-    for (let i = 0; i < nthTerm; i++) {
+    for (let i = 0; i < nthTerm - 1; i++) {
+        // console.log("Equation: " + currentTerm + " + " + lastTerm + " = " + (currentTerm+lastTerm));
         tempStorage = currentTerm; 
         currentTerm += lastTerm;
         lastTerm = tempStorage; 
