@@ -1,4 +1,13 @@
 const findTheOldest = function(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].yearOfDeath === null) {
+            array[i].yearOfDeath = 2024;
+        } 
+        if (array[i].yearOfBirth === null) {
+            array[i].yearOfBirth = 2024; 
+        }
+    }
+
     let ageArray = []; 
     ageArray = array.map((person) => person.yearOfDeath - person.yearOfBirth);
 
