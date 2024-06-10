@@ -1,9 +1,9 @@
 const findTheOldest = function(array) {
     for (let i = 0; i < array.length; i++) {
-        if (array[i].yearOfDeath === null) {
+        if (!(array[i].yearOfDeath)) {
             array[i].yearOfDeath = 2024;
         } 
-        if (array[i].yearOfBirth === null) {
+        if (!(array[i].yearOfBirth)) {
             array[i].yearOfBirth = 2024; 
         }
     }
