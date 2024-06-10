@@ -3,7 +3,6 @@ const palindromes = function (string) {
     filteredString = filteredString.toLowerCase(); 
 
 
-    console.log("STRING: " + filteredString); 
     for (let i = 0; i < filteredString.length; i++) {
         if (filteredString[i] != filteredString[filteredString.length - i - 1]) {
             return false; 
