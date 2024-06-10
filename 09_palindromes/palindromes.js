@@ -1,6 +1,6 @@
 const palindromes = function (string) {
-    // remove spaces and punctuation from string
     let filteredString = [...string].filter(char => /[^\W_]/.test(char)).join(''); 
+    filteredString = filteredString.toLowerCase(); 
 
 
     console.log("STRING: " + filteredString); 
