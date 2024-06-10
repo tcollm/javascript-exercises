@@ -5,9 +5,9 @@ const convertToCelsius = function(temp) {
   return Math.round((convertedTemp + Number.EPSILON) * 10) / 10;  
 };
 
-// Forumla for C to FL x * 5/9 + 32
+// Formula for C to FL x * 5/9 + 32
 const convertToFahrenheit = function(temp) {
-  let convertedTemp = temp * 5/9 + 32; 
+  let convertedTemp = temp * 9/5 + 32; 
 
   return Math.round((convertedTemp + Number.EPSILON) * 10) / 10;  
 };
